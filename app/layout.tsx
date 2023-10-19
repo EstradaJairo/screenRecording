@@ -23,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html className="h-full w-full" lang="en">
-      <Head>
+      <head>
         <script
           type="text/javascript"
           dangerouslySetInnerHTML={{
@@ -32,22 +32,13 @@ export default function RootLayout({
                 window.__insp = window.__insp || [];
                 __insp.push(['wid', 625483526]);
                 var ldinsp = function(){
-                  if(typeof window.__inspld != "undefined") return; 
-                  window.__inspld = 1; 
-                  var insp = document.createElement('script'); 
-                  insp.type = 'text/javascript'; 
-                  insp.async = true; 
-                  insp.id = "inspsync"; 
-                  insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js?wid=625483526&r=' + Math.floor(new Date().getTime()/3600000); 
-                  var x = document.getElementsByTagName('script')[0]; 
-                  x.parentNode.insertBefore(insp, x); 
-                };
+                if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js?wid=625483526&r=' + Math.floor(new Date().getTime()/3600000); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
                 setTimeout(ldinsp, 0);
               })();
             `,
           }}
         />
-      </Head>
+      </head>
       <body className={`${inter.className} h-full w-full`}>{children}</body>
     </html>
   );
