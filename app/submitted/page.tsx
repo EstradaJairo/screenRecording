@@ -11,14 +11,16 @@ const Submitted = () => {
   const subscribe = searchParams.get("subscribe");
 
   return (
-    <div className="p-4 border rounded-lg max-w-md mx-auto">
-      <h1 className="text-2xl mb-4">Submitted Data</h1>
-      <p>Name: {name}</p>
-      <p>Email: {email}</p>
-      <p>Subscribe: {subscribe}</p>
-      {/* <Link href="/">
+    <div className="flex flex-col h-full w-full items-center justify-center">
+      <div className="p-4 border rounded-lg max-w-md mx-auto">
+        <h1 className="text-2xl mb-4">Submitted Data</h1>
+        <p>Name: {name}</p>
+        <p>Email: {email}</p>
+        <p>Subscribe: {subscribe}</p>
+        {/* <Link href="/">
         <a className="block mt-4 text-blue-500">Back to Form</a>
       </Link> */}
+      </div>
     </div>
   );
 };
